@@ -19,11 +19,11 @@ Patterns (patrons creacionals, estructurals, comportament)
     Caldrà descarregar i instalar RabbitMQ, el servidor o "broker" de missatgeria de codi obert basat en el
     protocol AMQP. RabbitMQ utilitza la llibreria de client Erlang per el que s'haurá d'instal·lar abans de utilitzar-ho. Ho podeu fer desde https://www.erlang.org/downloads.
 
-        altres opcions: Homebrew on OS X: brew install erlang
-                        Ubuntu and Debian: apt-get install erlang
-                        Fedora: yum install erlang
+altres opcions: Homebrew on OS X: brew install erlang
+                Ubuntu and Debian: apt-get install erlang
+                Fedora: yum install erlang
 
-    -- Instal·lant RabbitMQ
+ Instal·lant RabbitMQ
 
         opció A:  Utilitzant chocolatery (recomanat) a windows: choco install rabbitmq
 
