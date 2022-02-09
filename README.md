@@ -1,18 +1,18 @@
 # Sprint3
 IT Academy - Patterns
 
-# Sprint_3
+
 Patterns (patrons creacionals, estructurals, comportament) 
 
-NECESSARI! instalar el modul 'chalk' per utilitzar el singleton.js
+- NECESSARI! instalar el modul 'chalk' per utilitzar el singleton.js
     Anar al menu Terminal => New Terminal o utilitzar les tecles 'Ctrl+Shift+5'
     Desde el terminal teclejar $ npm install chalk 
 
-NECESSARI! instalar el modul 'events' per utilitzar el patró observer.  
+- NECESSARI! instalar el modul 'events' per utilitzar el patró observer.  
     Anar al menu Terminal => New Terminal o utilitzar les tecles 'Ctrl+Shift+5'
     Desde el terminal teclejar $ npm install event
 
-MECESSARI! instalar el modul 'amqplib' (advance message queuing protocol) per utilitzar el patró publisher.
+- NECESSARI! instalar el modul 'amqplib' (advance message queue protocol) per utilitzar el patró publisher.
     Anar al menu Terminal => New Terminal  utilitzar les tecles 'Ctrl+Shift+5'
     Desde el terminal teclejar $ npm install amqplib
 
