@@ -1,6 +1,7 @@
 {
   "name": "sprint3",
   "version": "1.0.0",
+  "type": "module",
   "description": "IT Academy - Patterns",
   "main": "index.js",
   "scripts": {
@@ -20,6 +21,7 @@
   "dependencies": {
     "amqplib": "^0.8.0",
     "chalk": "^5.0.0",
-    "events": "^3.3.0"
+    "events": "^3.3.0",
+    "node": "^17.4.0"
   }
 }
