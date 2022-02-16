@@ -2,15 +2,15 @@ const app = require('./gestorMW');
 const fn = require('./functions')
 
 app.append( (next) => {
-  console.log('square: ' + (fn.sum()) * 2 + ' from sum function result')
+  console.log(`square: from sum ${fn.sum()} function result`)
   next();
 })
 app.append( (next) => {
-  console.log('cube: ' + (fn.subtraction()) * 3 + ' from subtraction function result')
+  console.log(`cube: from subtraction ${fn.subtraction()} function result`)
   next();
 })
 app.append( (next) => {
-  console.log('division: ' + (fn.multiplication()) / 2 + ' from multiplication function result')
+  console.log(`division: from multiplication ${fn.multiplication()} function result`)
   next();
 })
 

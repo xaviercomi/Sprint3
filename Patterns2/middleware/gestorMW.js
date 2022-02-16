@@ -1,4 +1,5 @@
-const fn = require('./functions')
+
+const middle = require('./middle')
 
 const handlerMW = () => {
   const middlewares = []
@@ -8,17 +9,19 @@ const handlerMW = () => {
     console.log("middleware added");
   };
   
-  const execute = index => {
-    if (index < middlewares.length){
-      middlewares[index].call(null, () => execute(index + 1))
+  const execute = index =>  {
+    if (index < middlewares.length) {
+      middlewares[index].call(middle(),  () => execute(index + 1) )
     }
-  }
+  }  
+
   const run = () => {
     execute(0)
   }
+
   return { run, append }
 }
 
-module.exports = handlerMW()
+module.exports = handlerMW();
 
 
