@@ -21,6 +21,8 @@ let joc = {
     jugador: [],
     puntuacio: [],
     marcaJugador: [],
+
+
     guanyador: function () {
 
         let maxPunts = this.puntuacio[0]
@@ -48,25 +50,24 @@ let joc = {
                                 {nom:'Vegetta777',puntGuanyat: 4356, puntPerdut: 100},
                                 {nom:'TheGrefg',puntGuanyat: 987, puntPerdut: 56},
                                 {nom:'Alexby11',puntGuanyat: 345, puntPerdut: 10} );
+ 
 
-        let marcador = new Marcador(this.marcaJugador);                     // Instància de la classe Marcador amb l'array marcaJugador com a parametre.   
+        // console.log(chalk.red.underline.bgWhiteBright(' << Nou marcador >>\n'));
+        // for(let j in marcador) {                                                    // Bucle que recorre l'objecte marcador i mostra per consola els objectes de l'array marcaJugador
+        //     console.log(marcador);                                          
+        // }   
 
-        console.log(chalk.red.underline.bgWhiteBright(' << Nou marcador >>\n'));
-        for(let j in marcador) {                                                    // Bucle que recorre l'objecte marcador i mostra per consola els objectes de l'array marcaJugador
-            console.log(marcador);                                          
-        }   
-
-        let marcador2 = new Marcador(this.marcaJugador);                            // Nova instàcia de la classe Marcador amb l'array marcaJugador com a parametre 
-        console.log(chalk.red.underline.bgWhiteBright(' << Nou marcador >>\n'));    // Retorna el mateix resultat que la instància marcador.
-        for(let k in marcador2) {    
-            console.log(marcador2);
-        }  
+        // let marcador2 = new Marcador(this.marcaJugador);                            // Nova instàcia de la classe Marcador amb l'array marcaJugador com a parametre 
+        // console.log(chalk.red.underline.bgWhiteBright(' << Nou marcador >>\n'));    // Retorna el mateix resultat que la instància marcador.
+        // for(let k in marcador2) {    
+        //     console.log(marcador2);
+        // }  
         
-        let marcador3 = new Marcador();                                             // Nova instàcia de la classe Marcador SENSE l'array marcaJugador com a parametre 
-        console.log(chalk.red.underline.bgWhiteBright(' << Nou marcador >>\n'));    // Retorna el mateix resultat que la instància marcador.
-        for(let l in marcador3) {    
-            console.log(marcador3);
-        }  
+        // let marcador3 = new Marcador();                                             // Nova instàcia de la classe Marcador SENSE l'array marcaJugador com a parametre 
+        // console.log(chalk.red.underline.bgWhiteBright(' << Nou marcador >>\n'));    // Retorna el mateix resultat que la instància marcador.
+        // for(let l in marcador3) {    
+        //     console.log(marcador3);
+        // }  
 
         this.marcaJugador.push({nom:'El rubios',puntGuanyat: 0, puntPerdut: 0},     // Entrada de nou marcador.
                                 {nom:'willrex',puntGuanyat: 0, puntPerdut: 0},
