@@ -1,7 +1,6 @@
 {
   "name": "sprint3",
   "version": "1.0.0",
-  "type": "module",
   "description": "IT Academy - Patterns",
   "main": "index.js",
   "scripts": {
