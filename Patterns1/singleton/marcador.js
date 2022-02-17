@@ -1,8 +1,7 @@
 class Marcador {
 
-    constructor() {
-        this.jugador = jugador;
-        this.puntuacio = puntuacio;
+    constructor(jugador) {
+        this.jugador = [jugador];
 
         if (typeof Marcador.instance === 'object') {
             return Marcador.instance
@@ -14,4 +13,4 @@ class Marcador {
     }
 }
 
-export { Marcador };
+module.exports =  Marcador;
