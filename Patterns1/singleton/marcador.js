@@ -1,7 +1,7 @@
 class Marcador {
 
-    constructor(jugador) {
-        this.jugador = [jugador];
+    constructor(nom) {
+        this.nom = nom;
 
         if (typeof Marcador.instance === 'object') {
             return Marcador.instance

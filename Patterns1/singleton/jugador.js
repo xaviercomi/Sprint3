@@ -1,5 +1,4 @@
 
-
 class Jugador {
 
     constructor (sobreNom, contrasenya) {
@@ -7,9 +6,9 @@ class Jugador {
         this.contrasenya = contrasenya;
     }
 
-    creaJugador(sobreNom, contrasenya) {
-        const jugador = new Jugador(sobreNom, contrasenya);
-        console.log(`Nou jugador creat: ${jugador.sobreNom}`);
+    static creaJugador(sobreNom, contrasenya){
+        this.jugador = new Jugador(sobreNom, contrasenya);
+        console.log(`Nou jugador creat: ${this.jugador.sobreNom}`);
     }
 }
 
