@@ -1,24 +1,25 @@
 const numJson = require('./parameters.json')
 const Middle = require('./gestorMW');
-const fn = require('./functions')
+const Funcio = require('./funcions');
 
-app = new Middle(fn)
+const calcular = new Funcio()
+const app = new Middle(calcular)
 
-app.use( (next) => {
+app.usa( (next) => {
   console.log(`square ${ (numJson.a) **2 }`)
   next();
 })
-app.use( (next) => {
+app.usa( (next) => {
   console.log(`cube ${ (numJson.a) **3 }`)
   next();
 })
-app.use( (next) => {
+app.usa( (next) => {
   console.log(`division ${ (numJson.a) /2 }`)
   next();
 })
 
 
-console.log(fn.sum());
-console.log(fn.subtraction());
-console.log(fn.multiplication());
+console.log(app.suma());
+console.log(app.resta());
+console.log(app.multiplica());
 
